@@ -6,7 +6,7 @@ import pickle
 # Load the trained model
 model_path = 'model_penguin_66130701711.pkl'  # Ensure this file is in the same directory
 with open(model_path, 'rb') as f:
-    model = pickle.load(f)
+    model, species_encoder, island_encoder, sex_encoder = pickle.load(f)
 
 # Streamlit app
 st.title("Penguin Species Predictor")
