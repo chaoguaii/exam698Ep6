@@ -39,10 +39,10 @@ if st.button("Predict"):
 
     # Make a prediction
     prediction = model.predict(input_data)
-    result - species_encoder.inverse_transform(prediction)
+    result - species_encoder.inverse_transform(prediction[0])
 
     # Display the result
-    st.subheader(f"Predicted Species: {result[0]}")
+    st.subheader(f"Predicted Species: {result}")
 
 
 
